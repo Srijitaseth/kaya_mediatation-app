@@ -1,0 +1,348 @@
+/* Scroll & layout base */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Main background for the page */
+.calendar-main-bg {
+  max-width: 430px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 16px 12px 16px;
+  position: relative;
+  border-bottom: 1.5px solid #e4e4e4;
+  background: #fff;
+}
+
+.profile-avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #eee;
+  margin-right: 16px;
+}
+
+.profile-greeting {
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: auto;
+}
+
+.menu-icon {
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-left: 16px;
+}
+.menu-line {
+  width: 100%;
+  height: 4px;
+  background: #222;
+  border-radius: 2px;
+}
+
+/* Calendar Card */
+.calendar-card {
+  margin: 24px 16px 18px 16px;
+  background: linear-gradient(180deg, #ffe9b9 0%, #b7d7b0 100%);
+  border-radius: 32px;
+  padding: 24px 18px 18px 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  position: relative;
+  overflow: visible;
+}
+
+.calendar-header {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.calendar-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 16px 0;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  word-break: break-word;
+  min-height: 100px;
+}
+
+.calendar-day {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  border: 2px solid transparent;
+}
+
+.calendar-day.selected {
+  background: #7cae8b;
+  color: #fff;
+  border: 2px solid #689b78;
+  transform: scale(1.12);
+}
+
+.calendar-footer {
+  font-size: 13px;
+  color: #6a6a6a;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Two-column layout for reminder and meditation */
+.calendar-row {
+  display: flex;
+  gap: 14px;
+  margin: 18px 16px 0 16px;
+}
+
+.reminder-card, .meditation-card {
+  flex: 1 1 0;
+  border-radius: 28px;
+  padding: 18px 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reminder-card {
+  background: #ffe9b9;
+  min-width: 0;
+}
+
+.reminder-icon {
+  width: 32px;
+  height: 32px;
+  background: url('https://cdn-icons-png.flaticon.com/512/1828/1828884.png') center/cover no-repeat;
+  margin-bottom: 8px;
+}
+
+.reminder-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.reminder-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+.reminder-list li {
+  margin-bottom: 3px;
+}
+
+.reminder-actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.accept-btn, .save-btn {
+  flex: 1;
+  padding: 7px 0;
+  border: none;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  color: #7cae8b;
+  transition: background 0.2s;
+}
+
+.accept-btn:hover, .save-btn:hover {
+  background: #e9f5e7;
+}
+
+.meditation-card {
+  background: #b7d7b0;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.meditation-text {
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.meditation-highlight {
+  color: #fff;
+  font-weight: 700;
+}
+
+.meditation-illustration {
+  width: 64px;
+  height: 64px;
+  background: url('https://cdn-icons-png.flaticon.com/512/2922/2922510.png') center/cover no-repeat;
+  margin: 0 auto;
+}
+
+/* Categories Card */
+.categories-card {
+  background: #ffe9b9;
+  border-radius: 28px;
+  margin: 18px 16px 0 16px;
+  padding: 18px 12px 20px 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+
+.categories-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.categories-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.category-pill {
+  padding: 7px 18px;
+  border-radius: 18px;
+  background: #f4f4f4;
+  border: none;
+  font-size: 14px;
+  color: #444;
+  font-style: italic;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.category-pill.active {
+  background: #7cae8b;
+  color: #fff;
+  font-weight: 600;
+}
+
+.categories-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Motivation Card */
+.motivation-card {
+  background: #b7d7b0;
+  border-radius: 28px;
+  margin: 18px 16px 0 16px;
+  padding: 18px 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.speech-bubble {
+  width: 34px;
+  height: 26px;
+  background: #ffe9b9;
+  border-radius: 8px;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.motivation-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.motivation-text p {
+  margin: 0 0 3px 0;
+}
+
+/* Single Centered Plan Button */
+.daily-plan-btn {
+  display: block;
+  width: 90%;
+  max-width: 350px;
+  margin: 28px auto 0 auto;
+  padding: 16px 0;
+  background: #7cae8b;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.daily-plan-btn:hover {
+  background: #689b78;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .calendar-main-bg {
+    max-width: 100vw;
+    padding: 0 0 24px 0;
+  }
+  .calendar-card,
+  .calendar-row,
+  .categories-card,
+  .motivation-card {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .calendar-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

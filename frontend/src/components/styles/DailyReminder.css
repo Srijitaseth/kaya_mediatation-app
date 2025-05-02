@@ -1,0 +1,35 @@
+/* Card Styling */
+.reminder-card {
+    background: linear-gradient(to right, #f6e6cd, #ffffff);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 120px;
+  }
+  
+  /* Header */
+  .reminder-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Text */
+  .reminder-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Fade Animation */
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  

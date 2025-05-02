@@ -1,0 +1,117 @@
+/* SignUp.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .login-container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-section h2 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .logo-section p {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  .start-btn {
+    background-color: #f5d18e;
+    color: black;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .start-btn:hover {
+    background-color: #f1c27b;
+  }
+  
+  .illustration img {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .email-input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  
+  .email-signup {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .email-signup:hover {
+    background-color: #333;
+  }
+  
+  .switch-option {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .switch-option a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .switch-option a:hover {
+    text-decoration: underline;
+  }
+  
+  .terms {
+    font-size: 12px;
+    color: gray;
+    margin-top: 15px;
+  }
+  
+  .terms a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  

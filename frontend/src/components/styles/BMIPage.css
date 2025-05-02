@@ -1,0 +1,221 @@
+/* General page layout */
+.bmi-page {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .bmi-title {
+    text-align: left;
+    color: #4A89DC;
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  /* Interesting Facts Box */
+  .interesting-facts-box {
+    background: linear-gradient(to right, #7ca1e1, #5d8bd9);
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    min-height: 150px;
+  }
+  
+  .interesting-facts-box:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: linear-gradient(to right, #6b90d0, #4a7ad1);
+    border-radius: 20px;
+    z-index: 0;
+  }
+  
+  .facts-content {
+    position: relative;
+    z-index: 1;
+    flex: 2;
+  }
+  
+  .facts-content h3 {
+    color: white;
+    font-size: 22px;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+  }
+  
+  .facts-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    padding: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .yoga-illustration {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .yoga-illustration img {
+    max-width: 100%;
+    max-height: 120px;
+  }
+  
+  /* BMI Calculator Card */
+  .bmi-card {
+    background: linear-gradient(to bottom, #f5e0c4, #dcb585);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  
+  /* Gender toggle */
+  .gender-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .gender-toggle button {
+    background: #bfd3a7;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4a4a4a;
+    width: 48%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .gender-toggle button.active {
+    background: #a7c18b;
+    color: white;
+  }
+  
+  /* Form section */
+  .form-section {
+    margin-bottom: 25px;
+  }
+  
+  .form-label {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  .input-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-label {
+    background: #8bacd4;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .input-field {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .input-field input {
+    width: 100%;
+    background: #8bacd4;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* BMI Score section */
+  .bmi-score-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bmi-score-btn {
+    background: #bfd3a7;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a4a4a;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .bmi-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .bmi-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* For placeholder image if you don't have an SVG */
+  @media (max-width: 400px) {
+    .input-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .input-field {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+  

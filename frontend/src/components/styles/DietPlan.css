@@ -1,0 +1,102 @@
+/* DietPlan.css */
+
+.diet-plan-page {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .category-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .food-card {
+    padding: 16px;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* 👇 Gradient backgrounds */
+  .bg-gradient-veg {
+    background: linear-gradient(to right, #a6cf60, #f4e04d);
+  }
+  
+  .bg-gradient-juice {
+    background: linear-gradient(to right, #c850c0, #ffcc70);
+  }
+  
+  .bg-gradient-fish {
+    background: linear-gradient(to right, #5a8dee, #90caf9);
+  }
+  
+  .bg-gradient-nut {
+    background: linear-gradient(to right, #cc9966, #ffe0b2);
+  }
+  
+  .bg-gradient-eggs {
+    background: linear-gradient(to right, #fbc02d, #fff9c4);
+  }
+  /* 👆 Gradient backgrounds */
+  
+  .food-img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+  
+  .add-to-cart {
+    background: white;
+    color: black;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+  
+  .personalised-section {
+    margin-top: 40px;
+  }
+  
+  .personalised-btn {
+    background: #7E9F6D;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: white;
+    border: none;
+  }
+  
+  .nutrition-card {
+    background: #A1B79B;
+    border-radius: 18px;
+    padding: 18px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .nutrition-card img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .start-btn {
+    margin-top: 10px;
+    background: #D6EDC3;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+  }
+  

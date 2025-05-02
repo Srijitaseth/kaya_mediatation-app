@@ -1,0 +1,107 @@
+.yoga-facts-container {
+    background: linear-gradient(to right, #7ca1e1, #5d8bd9);
+    border-radius: 25px;
+    padding: 22px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    min-height: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .yoga-facts-content {
+    flex: 2;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .yoga-facts-content h3 {
+    color: white;
+    font-size: 26px;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+  }
+  
+  .fact-text {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 18px 0;
+    transition: opacity 0.3s ease, height 0.5s ease;
+    animation: fadeIn 0.5s ease;
+    max-width: 90%;
+  }
+  
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: normal;
+    align-self: flex-start;
+    transition: color 0.2s ease;
+  }
+  
+  .read-more-btn:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .yoga-pose {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .yoga-img {
+    max-width: 100%;
+    max-height: 130px;
+    object-fit: contain;
+    opacity: 0.95;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 500px) {
+    .yoga-facts-container {
+      flex-direction: column;
+      padding: 20px;
+      min-height: 180px;
+    }
+    
+    .yoga-facts-content {
+      padding-right: 0;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    
+    .yoga-pose {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .fact-text {
+      max-width: 100%;
+    }
+  }
+  
+  /* Expanded state styles */
+  .fact-text.expanded {
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
