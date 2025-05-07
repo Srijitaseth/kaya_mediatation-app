@@ -212,44 +212,7 @@
     background: #5d8b6b;
   }
   
-  /* Bottom Navigation Bar */
-  .bottom-nav {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    border-top: 1px solid #eee;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 62px;
-    z-index: 100;
-  }
   
-  .nav-icon {
-    font-size: 1.7rem;
-    color: #222;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-  }
-  
-  .nav-icon.plus {
-    background: #a94442;
-    color: #fff;
-    border-radius: 50%;
-    width: 54px;
-    height: 54px;
-    font-size: 2.2rem;
-    margin-top: -18px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   /* Responsive */
   @media (max-width: 500px) {

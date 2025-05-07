@@ -1,0 +1,568 @@
+.food-categories-page {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 20px 10px 80px 10px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .category-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #111;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 12px;
+  }
+  
+  .category-card {
+    border-radius: 24px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .category-img {
+    width: 80px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+  
+  .category-label {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: auto;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    text-transform: capitalize;
+  }
+  
+  .add-btn-ui {
+    background: #fff;
+    color: #222;
+    border: none;
+    border-radius: 18px;
+    font-size: 15px;
+    padding: 8px 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    font-weight: 600;
+    margin-top: 12px;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .add-btn-ui:hover {
+    background: #7cae8b;
+    color: #fff;
+  }
+  
+  .choose-best-row {
+    margin: 24px 0 16px 0;
+  }
+  
+  .choose-best {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .diet-section {
+    margin-bottom: 16px;
+  }
+  
+  .diet-plan-btn {
+    background: #7cae8b;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+  
+  .healthy-body-card {
+    background: #7cae8b;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .avocado-img {
+    width: 100px;
+    margin-right: 16px;
+  }
+  
+  .healthy-body-content {
+    color: white;
+  }
+  
+  .healthy-body-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .comes {
+    color: #f7cd55;
+    font-weight: 600;
+  }
+  
+  .start-today-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .start-today {
+    font-weight: 500;
+  }
+  
+  .plus-btn {
+    background: white;
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    max-width: 430px;
+    margin: 0 auto;
+    z-index: 100;
+  }
+  
+  .nav-item {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .add-btn {
+    background: #d1186e;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 24px;
+  }
+  
+  /* Recipe view styles */
+  .recipes-view {
+    padding-top: 16px;
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    color: #3a7ca5;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .recipes-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #222;
+  }
+  
+  .recipe-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .filter-btn.active {
+    background: #7cae8b;
+    color: white;
+  }
+  
+  .recipes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .recipe-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 24px 20px 20px 20px;
+    margin-bottom: 24px;
+    transition: transform 0.18s;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #f1f1f1;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 6px 24px rgba(124,174,139,0.13);
+  }
+  
+  .recipe-card h3 {
+    color: #3a7ca5;
+    font-size: 22px;
+    margin-top: 0;
+    border-bottom: 2px solid #7cae8b;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  
+  .recipe-meta {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .prep-time, .difficulty {
+    font-size: 14px;
+    color: #619b70;
+    background: #eaf6eb;
+    border-radius: 12px;
+    padding: 2px 10px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .nutrition-info {
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin: 14px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .nutrition-info span {
+    background: #e8f3ea;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #619b70;
+    margin-right: 6px;
+    margin-bottom: 4px;
+  }
+  
+  .ingredients strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #4a89dc;
+    font-weight: 600;
+  }
+  
+  .ingredients ul {
+    margin: 0;
+    padding-left: 22px;
+  }
+  
+  .ingredients li {
+    margin-bottom: 4px;
+    font-size: 15px;
+    color: #444;
+  }
+  
+  .buy-ingredients-btn {
+    background: #7cae8b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 22px;
+    margin-top: 18px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(124,174,139,0.10);
+  }
+  
+  .buy-ingredients-btn:hover {
+    background: #619b70;
+  }
+  
+  /* Diet Quiz Styles */
+  .diet-quiz-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .diet-quiz-container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    border-radius: 24px;
+    padding: 24px;
+    position: relative;
+    animation: slideUp 0.4s ease-out;
+  }
+  
+  .close-quiz-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .quiz-progress {
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: #7cae8b;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-text {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
+    text-align: right;
+  }
+  
+  .question-container h3 {
+    margin-bottom: 15px;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .option-button {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .option-button:hover {
+    background: #f8f8f8;
+  }
+  
+  .option-button.selected {
+    background: #7cae8b;
+    color: white;
+    border-color: #7cae8b;
+  }
+  
+  /* Diet Plan Results Styles */
+  .diet-plan-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .diet-plan-container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    border-radius: 24px;
+    padding: 24px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideUp 0.4s ease-out;
+  }
+  
+  .close-plan-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .plan-summary {
+    background: #f8f8f8;
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .weekly-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .plan-day h3 {
+    background: #f0f0f0;
+    padding: 10px 16px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .plan-meal {
+    background: #f8f8f8;
+    padding: 12px 16px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .meal-macros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .meal-macros span {
+    background: #eee;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  
+  .generating-results {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255,255,255,0.3);
+    border-top: 4px solid white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .insight-btn {
+    width: 90%;
+    margin: 16px auto 24px;
+    display: block;
+    padding: 16px 0;
+    background: linear-gradient(135deg, #3c7ba6 0%, #f7cd55 100%);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 16px rgba(60, 123, 166, 0.15);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .insight-btn:hover {
+    background: linear-gradient(135deg, #f7cd55 0%, #3c7ba6 100%);
+  }
+  

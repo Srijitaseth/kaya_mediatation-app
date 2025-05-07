@@ -242,13 +242,7 @@ const DailyPlan = ({ tasks: propTasks }) => {
       </button>
 
       {/* Bottom Navigation */}
-      <div className="bottom-nav">
-        <div className="nav-icon"><span role="img" aria-label="home">🏠</span></div>
-        <div className="nav-icon"><span>Button</span></div>
-        <div className="nav-icon plus"><span>+</span></div>
-        <div className="nav-icon"><span role="img" aria-label="cart">🛒</span></div>
-        <div className="nav-icon"><span role="img" aria-label="menu">☰</span></div>
-      </div>
+      
     </div>
   );
 };

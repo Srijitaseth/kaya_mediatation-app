@@ -4,8 +4,9 @@ import Signin from "./components/pages/Signin";
 import Home from "./components/pages/Home";
 import DailyPlan from "./components/pages/DailyPlan";
 import BMIPage from "./components/pages/BMIPage";
-// import CalendarTracker from "./components/CalendarTracker"; // no longer needed directly
 import ProfilePage from "./components/pages/ProfilePage";
+import FoodCategories from "./components/pages/FoodCategories";
+import InsightPage from "./components/pages/InsightPage"; // <-- Add this line
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/daily-plan" element={<DailyPlan />} />
       <Route path="/bmi" element={<BMIPage />} />
-      {/* <Route path="/calendar" element={<CalendarTracker />} /> */}
       <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/food-categories" element={<FoodCategories />} />
+      <Route path="/insight" element={<InsightPage />} /> {/* <-- Add this line */}
     </Routes>
   );
 }

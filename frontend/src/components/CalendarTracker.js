@@ -47,11 +47,6 @@ const CalendarTracker = () => {
           <img src={defaultAvatar} alt="Profile" />
         </div>
         <span className="profile-greeting">Hi, Sam</span>
-        <div className="menu-icon">
-          <div className="menu-line" />
-          <div className="menu-line" />
-          <div className="menu-line" />
-        </div>
       </div>
 
       {/* KEEP ONLY THIS BUTTON */}
